@@ -2,7 +2,7 @@
 
 /* Controllers */
 
-angular.module('myApp.controllers', [])
+angular.module('gyrateCustomer.controllers', [])
   .controller('MyCtrl1', ['$scope', function($scope) {
 
   }])
