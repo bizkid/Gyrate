@@ -1,5 +1,6 @@
 <p>Create Customer</p>
 
+<!--
 <table>
 <tr><td><input type="text" ng-model="firstName" placeholder="Enter your first name..."></td></tr>
 <tr><td><input type="text" ng-model="lastName" placeholder="Enter your last name..."></td></tr>
@@ -11,3 +12,21 @@
 <tr><td><input type="text" ng-model="country" placeholder="Enter your country..."></td></tr>
 <tr><td><input type="tel" ng-model="phoneNumber" placeholder="Enter your phone number..."></td></tr>
 </table>
+-->
+
+<form autocomplete='on' novalidate>
+    <input type="text" ng-model="customer.firstName" placeholder="Enter your first name..." autofocus><br>
+    <input type="text" ng-model="customer.lastName" placeholder="Enter your last name..."><br>
+    <input type="email" ng-model="customer.email" placeholder="Enter your email..."><br>
+    <input type="text" ng-model="customer.address1" placeholder="Enter your street..."><br>
+    <input type="text" ng-model="customer.address2" placeholder="Enter your address2..."><br>
+    <input type="text" ng-model="customer.zip" placeholder="Enter your zip code..."><br>
+    <input type="text" ng-model="customer.city" placeholder="Enter your city..."><br>
+    <input type="text" ng-model="customer.country" placeholder="Enter your country..."><br>
+    <input type="tel" ng-model="customer.phoneNumber" placeholder="Enter your phone number..."><br>
+    <button ng-click="save(customer)">Save</button>
+</form>
+
+<Pre>
+    {{customer | json}}
+</Pre>
