@@ -12,5 +12,5 @@ angular.module('gyrateCustomer', [
 config(['$routeProvider', function($routeProvider) {
   $routeProvider.when('/create', {templateUrl: 'partials/createCustomer.html', controller: 'MyCtrl1'});
   $routeProvider.when('/search', {templateUrl: 'partials/partial2.html', controller: 'MyCtrl2'});
-  $routeProvider.otherwise({redirectTo: '/view1'});
+  $routeProvider.otherwise({redirectTo: '/search'});
 }]);
